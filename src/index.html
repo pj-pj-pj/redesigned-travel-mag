@@ -18,14 +18,14 @@
     <title>TravelASSIST Magazine</title>
   </head>
   <body
-    class="bg-orange-50 flex-col flex align-middle justify-around px-6 mx-auto"
+    class="bg-orange-50 flex-col flex align-middle justify-around px-6 mx-auto h-full"
   >
     <section
       id="title-page"
-      class="w-full flex-shrink-0 flex flex-col sm:justify-center align-middle mt-10"
+      class="w-full flex flex-col align-middle mt-10"
     >
       <h1
-        class="text-red-500 text-5xl font-black text-center sm:text-8xl lg:text-9xl"
+        class="text-red-500 text-7xl font-black text-center sm:text-8xl lg:text-9xl"
       >
         TravelASSIST
       </h1>
@@ -39,7 +39,7 @@
         </h2>
       </div>
       <nav
-        class="uppercase text-2xl sm:text-3xl flex flex-col gap-2 px-2 pb-4 sm:pb-12 underline underline-offset-8 md:text-3xl"
+        class="uppercase text-2xl sm:text-3xl flex flex-col gap-2 px-2 pb-4 underline underline-offset-8 md:text-3xl"
       >
         <ul class="flex justify-between">
           <a
@@ -68,75 +68,30 @@
           >
         </ul>
       </nav>
-      <figure class="relative w-full">
-        <img
-          src="./public/travel-pics/title-img.jpg"
-          alt="travel image"
-          class="object-cover h-full w-full"
-        />
-        <figcaption
-          class="bg-black bg-opacity-60 absolute px-6 pb-4 text-justify text-lg text-white bottom-0 w-full"
-        >
-          <h2 class="my-3 text-2xl sm:text-4xl sm:py-4 lg:py-2 text-center">
-            Home of the First Travel Magazine to be published on the Web!
-          </h2>
-          <p
-            class="indent-16 pb-2 sm:py-2 text-xs sm:text-base lg:max-w-4xl mx-auto lg:pb-2"
-          >
-            TravelASSIST Travel Magazine was first published in March of 1995.
-            The first monthly travel magazine on the web! Lots of magazines are
-            online, we hope ours will help you with your next vacation or
-            holiday.
-          </p>
-        </figcaption>
-      </figure>
     </section>
-    <section
-      id="featured"
-      class="h-screen flex flex-col align-middle justify-center"
-    >
-      <h1 class="text-red-500 text-5xl text-center sm:text-8xl lg:text-9xl">
-        FEATURED
-      </h1>
-      <div class="featured-description">
-        <div class="upper-part">
-          <div
-            class="info-area"
-            id="test"
-          >
-            <label
-              class="article-info"
-              id="article-info-1"
-            >
-              <div class="title">Bunker</div>
-              <div class="sub-line">
-                <div class="subtitle">Balthazar</div>
-                <div class="time">4.05</div>
-              </div>
-            </label>
-            <label
-              class="article-info"
-              id="article-info-2"
-            >
-              <div class="title">Words Remain</div>
-              <div class="sub-line">
-                <div class="subtitle">Moderator</div>
-                <div class="time">4.05</div>
-              </div>
-            </label>
-            <label
-              class="article-info"
-              id="article-info-3"
-            >
-              <div class="title">Falling Out</div>
-              <div class="sub-line">
-                <div class="subtitle">Otzeki</div>
-                <div class="time">4.05</div>
-              </div>
-            </label>
-          </div>
-        </div>
-      </div>
+    <figure class="relative w-full mt-5 mb-12">
+      <img
+        src="./public/travel-pics/title-img.jpg"
+        alt="travel image"
+        class="object-cover h-full w-full"
+      />
+      <figcaption
+        class="bg-black bg-opacity-60 absolute px-6 pb-4 text-justify text-lg text-white bottom-0 w-full"
+      >
+        <h2 class="my-3 text-2xl sm:text-4xl sm:py-4 lg:py-2 text-center">
+          Home of the First Travel Magazine to be published on the Web!
+        </h2>
+        <p
+          class="indent-16 pb-2 sm:py-2 text-xs sm:text-base lg:max-w-4xl mx-auto lg:pb-2"
+        >
+          TravelASSIST Travel Magazine was first published in March of 1995. The
+          first monthly travel magazine on the web! Lots of magazines are
+          online, we hope ours will help you with your next vacation or holiday.
+        </p>
+      </figcaption>
+    </figure>
+    <h1 class="text-red-500 text-7xl text-center sm:text-8xl">FEATURED</h1>
+    <section class="container">
       <input
         type="radio"
         name="slider"
@@ -153,7 +108,7 @@
         name="slider"
         id="item-3"
       />
-      <div class="cards relative w-96 h-96">
+      <div class="cards">
         <label
           class="card"
           for="item-1"
@@ -185,8 +140,47 @@
           />
         </label>
       </div>
+      <div class="featured-description mx-auto">
+        <div class="upper-part">
+          <div
+            class="info-area"
+            id="test"
+          >
+            <label
+              class="article-info"
+              id="article-info-1"
+            >
+              <h2 class="title text-5xl">Mexico</h2>
+              <div class="sub-line">
+                <div class="subtitle">Description</div>
+              </div>
+            </label>
+            <label
+              class="article-info"
+              id="article-info-2"
+            >
+              <h2 class="title text-5xl">Hawaii</h2>
+              <div class="sub-line">
+                <div class="subtitle">Description</div>
+              </div>
+            </label>
+            <label
+              class="article-info"
+              id="article-info-3"
+            >
+              <h2 class="title text-5xl">Traveling with Lori Guretzki</h2>
+              <div class="sub-line">
+                <div class="subtitle">Description</div>
+              </div>
+            </label>
+          </div>
+        </div>
+      </div>
     </section>
-    <section id="index">
+    <section
+      id="index"
+      class="flex flex-col align-middle justify-center"
+    >
       <h1>Check out TravelASSIST's Full Index</h1>
     </section>
     <footer></footer>
