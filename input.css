@@ -4,17 +4,17 @@
 
 @font-face {
   font-family: DM Serif Display;
-  src: url(../public/fonts/DMSerifDisplay-Regular.ttf);
+  src: url(./public/fonts/DMSerifDisplay-Regular.ttf);
 }
 
 @font-face {
   font-family: Old Standard;
-  src: url(../public/fonts/OldStandardTT-Regular.ttf);
+  src: url(./public/fonts/OldStandardTT-Regular.ttf);
 }
 
 @font-face {
   font-family: Gotham;
-  src: url(../public/fonts/Gotham-Book.otf);
+  src: url(./public/fonts/Gotham-Book.otf);
 }
 
 h1 {
@@ -34,6 +34,7 @@ h3 {
 p {
   font-family: Gotham, "Franklin Gothic Medium", "Arial Narrow", Arial,
     sans-serif;
+  font-weight: lighter;
 }
 
 * {
