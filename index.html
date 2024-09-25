@@ -18,14 +18,14 @@
     <title>TravelASSIST Magazine</title>
   </head>
   <body
-    class="bg-orange-50 flex-col flex align-middle justify-around px-6 mx-auto h-full"
+    class="bg-orange-50 flex-col flex align-middle justify-around px-6 mx-auto h-full ease-in-out"
   >
     <section
       id="title-page"
       class="w-full flex flex-col align-middle mt-10"
     >
       <h1
-        class="text-red-500 text-7xl font-black text-center sm:text-8xl lg:text-9xl"
+        class="text-red-500 text-5xl font-black text-center sm:text-8xl lg:text-9xl cursor-pointer hover:scale-105"
       >
         TravelASSIST
       </h1>
@@ -55,9 +55,9 @@
         </ul>
         <ul class="flex justify-between">
           <a
-            href=""
+            href="http://www.travelassist.com/contact_main.html"
             target="_blank"
-            class="hover:text-red-500"
+            class="hover:text-red-500 cursor-pointer"
             ><li>Contact</li></a
           >
 
@@ -90,8 +90,11 @@
         </p>
       </figcaption>
     </figure>
-    <h1 class="text-red-500 text-7xl text-center sm:text-8xl">FEATURED</h1>
-    <section class="container">
+    <h1 class="text-red-500 text-6xl font-black text-center">FEATURED</h1>
+    <section
+      id="featured"
+      class="container"
+    >
       <input
         type="radio"
         name="slider"
@@ -107,6 +110,11 @@
         type="radio"
         name="slider"
         id="item-3"
+      />
+      <input
+        type="radio"
+        name="slider"
+        id="item-4"
       />
       <div class="cards">
         <label
@@ -139,6 +147,16 @@
             alt="article"
           />
         </label>
+        <label
+          class="card"
+          for="item-4"
+          id="article-4"
+        >
+          <img
+            src="./public/travel-pics/pexels-quang-nguyen-vinh-222549-2649403.jpg"
+            alt="article"
+          />
+        </label>
       </div>
       <div class="featured-description mx-auto">
         <div class="upper-part">
@@ -150,7 +168,7 @@
               class="article-info"
               id="article-info-1"
             >
-              <h2 class="title text-5xl">Mexico</h2>
+              <h2 class="title text-4xl">Mexico</h2>
               <div class="sub-line">
                 <div class="subtitle">Description</div>
               </div>
@@ -159,7 +177,7 @@
               class="article-info"
               id="article-info-2"
             >
-              <h2 class="title text-5xl">Hawaii</h2>
+              <h2 class="title text-4xl">Hawaii</h2>
               <div class="sub-line">
                 <div class="subtitle">Description</div>
               </div>
@@ -168,7 +186,18 @@
               class="article-info"
               id="article-info-3"
             >
-              <h2 class="title text-5xl">Traveling with Lori Guretzki</h2>
+              <h2 class="title text-2xl sm:text-4xl">
+                Traveling with Lori Guretzki
+              </h2>
+              <div class="subtitle">Description</div>
+            </label>
+            <label
+              class="article-info"
+              id="article-info-2"
+            >
+              <h2 class="title text-2xl sm:text-4xl">
+                Asia with Dominic Light
+              </h2>
               <div class="sub-line">
                 <div class="subtitle">Description</div>
               </div>
