@@ -596,12 +596,28 @@ video {
   position: relative;
 }
 
+.sticky {
+  position: sticky;
+}
+
 .bottom-0 {
   bottom: 0px;
 }
 
 .left-1\/2 {
   left: 50%;
+}
+
+.top-20 {
+  top: 5rem;
+}
+
+.top-0 {
+  top: 0px;
+}
+
+.z-50 {
+  z-index: 50;
 }
 
 .my-12 {
@@ -617,6 +633,11 @@ video {
 .my-8 {
   margin-top: 2rem;
   margin-bottom: 2rem;
+}
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .flex {
@@ -639,8 +660,20 @@ video {
   height: 100vh;
 }
 
+.h-5\/6 {
+  height: 83.333333%;
+}
+
+.h-4\/6 {
+  height: 66.666667%;
+}
+
 .w-full {
   width: 100%;
+}
+
+.flex-shrink-0 {
+  flex-shrink: 0;
 }
 
 .-translate-x-1\/2 {
@@ -656,12 +689,20 @@ video {
   align-items: center;
 }
 
+.justify-start {
+  justify-content: flex-start;
+}
+
 .justify-center {
   justify-content: center;
 }
 
 .justify-between {
   justify-content: space-between;
+}
+
+.justify-around {
+  justify-content: space-around;
 }
 
 .gap-2 {
@@ -696,6 +737,10 @@ video {
      object-fit: cover;
 }
 
+.p-96 {
+  padding: 24rem;
+}
+
 .px-2 {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
@@ -717,6 +762,10 @@ video {
 
 .pb-4 {
   padding-bottom: 1rem;
+}
+
+.pb-3 {
+  padding-bottom: 0.75rem;
 }
 
 .text-left {
@@ -831,6 +880,12 @@ p {
   box-sizing: border-box;
 }
 
+html {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
 html,
 body {
   margin: 0;
@@ -841,8 +896,8 @@ body {
     sans-serif;
 }
 
-figure {
-  height: 100%;
+body {
+  max-width: 110rem;
 }
 
 .hover\:text-red-500:hover {
@@ -851,8 +906,38 @@ figure {
 }
 
 @media (min-width: 640px) {
+  .sm\:my-12 {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+
+  .sm\:my-0 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+
   .sm\:h-full {
     height: 100%;
+  }
+
+  .sm\:h-3\/6 {
+    height: 50%;
+  }
+
+  .sm\:h-5\/6 {
+    height: 83.333333%;
+  }
+
+  .sm\:h-4\/6 {
+    height: 66.666667%;
+  }
+
+  .sm\:justify-center {
+    justify-content: center;
+  }
+
+  .sm\:justify-around {
+    justify-content: space-around;
   }
 
   .sm\:py-2 {
@@ -886,8 +971,38 @@ figure {
 }
 
 @media (min-width: 768px) {
+  .md\:my-0 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+
+  .md\:my-12 {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+
   .md\:h-3\/5 {
     height: 60%;
+  }
+
+  .md\:h-4\/5 {
+    height: 80%;
+  }
+
+  .md\:h-5\/6 {
+    height: 83.333333%;
+  }
+
+  .md\:h-full {
+    height: 100%;
+  }
+
+  .md\:h-2\/4 {
+    height: 50%;
+  }
+
+  .md\:h-3\/4 {
+    height: 75%;
   }
 
   .md\:text-3xl {
@@ -902,9 +1017,39 @@ figure {
     margin-bottom: 1rem;
   }
 
-  .lg\:px-48 {
-    padding-left: 12rem;
-    padding-right: 12rem;
+  .lg\:my-12 {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+
+  .lg\:my-0 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+
+  .lg\:h-4\/5 {
+    height: 80%;
+  }
+
+  .lg\:h-3\/5 {
+    height: 60%;
+  }
+
+  .lg\:h-2\/5 {
+    height: 40%;
+  }
+
+  .lg\:max-w-80 {
+    max-width: 20rem;
+  }
+
+  .lg\:max-w-4xl {
+    max-width: 56rem;
+  }
+
+  .lg\:py-5 {
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
   }
 
   .lg\:py-8 {
@@ -915,6 +1060,41 @@ figure {
   .lg\:py-9 {
     padding-top: 2.25rem;
     padding-bottom: 2.25rem;
+  }
+
+  .lg\:py-10 {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+  }
+
+  .lg\:py-12 {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+
+  .lg\:px-16 {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+
+  .lg\:px-28 {
+    padding-left: 7rem;
+    padding-right: 7rem;
+  }
+
+  .lg\:px-40 {
+    padding-left: 10rem;
+    padding-right: 10rem;
+  }
+
+  .lg\:px-96 {
+    padding-left: 24rem;
+    padding-right: 24rem;
+  }
+
+  .lg\:px-80 {
+    padding-left: 20rem;
+    padding-right: 20rem;
   }
 
   .lg\:pb-6 {
