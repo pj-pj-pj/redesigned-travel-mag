@@ -18,11 +18,11 @@
     <title>TravelASSIST Magazine</title>
   </head>
   <body
-    class="bg-orange-50 flex-col flex align-middle justify-around px-6 mx-auto h-full ease-in-out"
+    class="bg-orange-50 flex-col flex align-middle justify-around px-6 mx-auto h-full"
   >
     <section
       id="title-page"
-      class="w-full flex flex-col align-middle mt-10"
+      class="w-full flex flex-col align-middle mt-10 h-full"
     >
       <h1
         class="text-red-500 text-5xl font-black text-center sm:text-8xl lg:text-9xl cursor-pointer hover:scale-105"
@@ -32,7 +32,7 @@
 
       <div class="inline-flex items-center justify-center w-full">
         <hr
-          class="w-full h-px my-8 bg-gray-200 border-0 dark:bg-gray-70"
+          class="w-full h-px my-8 bg-gray-200 border-0 dark:bg-gray-700"
           0
         />
         <h2
@@ -42,7 +42,7 @@
         </h2>
       </div>
       <nav
-        class="uppercase text-2xl sm:text-3xl flex flex-col gap-2 px-2 pb-4 underline underline-offset-8 md:text-3xl"
+        class="uppercase text-2xl lg:text-3xl flex flex-col gap-2 px-2 pb-4 underline underline-offset-8 md:text-3xl"
       >
         <ul class="flex justify-between">
           <a
@@ -94,143 +94,266 @@
       </figcaption>
     </figure>
 
-    <hr
-      id="featured"
-      class="w-full h-px mt-14 bg-gray-200 border-0 dark:bg-gray-70"
-    />
-    <hr class="border-gray-800" />
-    <h1 class="text-red-500 text-6xl font-black text-center my-4">FEATURED</h1>
-    <hr class="border-gray-800 mb-2" />
-    <hr class="border-gray-800 mb-10" />
+    <section id="featured">
+      <hr class="mt-14 border-gray-800" />
+      <h1 class="text-red-500 text-5xl font-black text-center my-4">
+        FEATURED
+      </h1>
+      <hr class="border-gray-800 mb-2" />
+      <hr class="border-gray-800" />
 
-    <section class="container">
-      <input
-        type="radio"
-        name="slider"
-        id="item-1"
-        checked
-      />
-      <input
-        type="radio"
-        name="slider"
-        id="item-2"
-      />
-      <input
-        type="radio"
-        name="slider"
-        id="item-3"
-      />
-      <input
-        type="radio"
-        name="slider"
-        id="item-4"
-      />
-      <div class="cards">
-        <label
-          class="card"
-          for="item-1"
-          id="article-1"
-        >
-          <img
-            src="./public/travel-pics/pexels-fr3nks-287229.jpg"
-            alt="article"
-          />
-        </label>
-        <label
-          class="card"
-          for="item-2"
-          id="article-2"
-        >
-          <img
-            src="./public/travel-pics/pexels-markusspiske-1679772.jpg"
-            alt="article"
-          />
-        </label>
-        <label
-          class="card"
-          for="item-3"
-          id="article-3"
-        >
-          <img
-            src="./public/travel-pics/pexels-pixabay-210243.jpg"
-            alt="article"
-          />
-        </label>
-        <label
-          class="card"
-          for="item-4"
-          id="article-4"
-        >
-          <img
-            src="./public/travel-pics/pexels-quang-nguyen-vinh-222549-2649403.jpg"
-            alt="article"
-          />
-        </label>
-      </div>
-      <div class="featured-description mx-auto">
-        <div class="upper-part">
-          <div
-            class="info-area"
-            id="test"
+      <section class="container">
+        <input
+          type="radio"
+          name="slider"
+          id="item-1"
+          checked
+        />
+        <input
+          type="radio"
+          name="slider"
+          id="item-2"
+        />
+        <input
+          type="radio"
+          name="slider"
+          id="item-3"
+        />
+        <input
+          type="radio"
+          name="slider"
+          id="item-4"
+        />
+        <div class="cards">
+          <label
+            class="card"
+            for="item-1"
+            id="article-1"
           >
-            <label
-              class="article-info"
-              id="article-info-1"
+            <img
+              src="./public/travel-pics/pexels-fr3nks-287229.jpg"
+              alt="article"
+            />
+          </label>
+          <label
+            class="card"
+            for="item-2"
+            id="article-2"
+          >
+            <img
+              src="./public/travel-pics/pexels-markusspiske-1679772.jpg"
+              alt="article"
+            />
+          </label>
+          <label
+            class="card"
+            for="item-3"
+            id="article-3"
+          >
+            <img
+              src="./public/travel-pics/pexels-pixabay-210243.jpg"
+              alt="article"
+            />
+          </label>
+          <label
+            class="card"
+            for="item-4"
+            id="article-4"
+          >
+            <img
+              src="./public/travel-pics/pexels-quang-nguyen-vinh-222549-2649403.jpg"
+              alt="article"
+            />
+          </label>
+        </div>
+        <div class="featured-description mx-auto articles">
+          <div class="upper-part">
+            <div
+              class="info-area"
+              id="test"
             >
-              <h2 class="title text-4xl">Mexico</h2>
-              <div class="sub-line">
-                <div class="subtitle">Description</div>
-              </div>
-            </label>
-            <label
-              class="article-info"
-              id="article-info-2"
-            >
-              <h2 class="title text-4xl">Hawaii</h2>
-              <div class="sub-line">
-                <div class="subtitle">Description</div>
-              </div>
-            </label>
-            <label
-              class="article-info"
-              id="article-info-3"
-            >
-              <h2 class="title text-xl sm:text-4xl">
-                Traveling with Lori Guretzki
-              </h2>
-              <div class="subtitle">Description</div>
-            </label>
-            <label
-              class="article-info"
-              id="article-info-2"
-            >
-              <h2 class="title text-2xl sm:text-4xl">
-                Asia with Dominic Light
-              </h2>
-              <div class="sub-line">
-                <div class="subtitle">Description</div>
-              </div>
-            </label>
+              <label
+                class="article-info"
+                id="article-info-1"
+              >
+                <h2 class="title text-4xl">Mexico</h2>
+                <label
+                  class="article-info"
+                  id="article-info-1"
+                >
+                  <p
+                    class="indent-16 text-justify text-xl line-clamp-3 max-w mb-5 my-2"
+                  >
+                    The Palmilla resort was founded in 1956 with 15 rooms and
+                    quickly became an intimate hideaway for celebrities like
+                    Bing Crosby, Lucille Ball & Desi Arnaz, John Wayne, and
+                    President Dwight D. Eisenhower. Today the resort has
+                    undergone an $80 million dollar face-lift by One & Only
+                    Resorts making it one of the premier beach resorts in the
+                    world. And it continues to attract celebs and high-rollers
+                    from around the world.
+                  </p>
+                  <a
+                    href="http://www.travelassist.com/mag/a139.html"
+                    class="justify-start text-md sm:text-xl py-2 text-red-500 underline underline-offset-4 decoration-red-500"
+                    target="_blank"
+                    >Read more...</a
+                  >
+                </label>
+              </label>
+              <label
+                class="article-info"
+                id="article-info-2"
+              >
+                <h2 class="title text-4xl">Hawaii</h2>
+                <label
+                  class="article-info"
+                  id="article-info-2"
+                >
+                  <p
+                    class="indent-16 text-justify text-xl line-clamp-3 max-w mb-5 my-2"
+                  >
+                    The Pride of Aloha, from Norwegian Cruise Lines new
+                    subsidiary NCL America, entered regular service in the
+                    Hawaiian Island on July 4th, 2004. I was able to board the
+                    Pride on July 3rd and experience the ship during a one nigh
+                    charitable fundraiser cruise.
+                  </p>
+                  <a
+                    href="http://www.travelassist.com/mag/a139.html"
+                    class="justify-start text-md sm:text-xl py-2 text-red-500 underline underline-offset-4 decoration-red-500"
+                    target="_blank"
+                    >Read more...</a
+                  >
+                </label>
+              </label>
+              <label
+                class="article-info"
+                id="article-info-3"
+              >
+                <h2 class="title text-4xl">Traveling with Lori</h2>
+                <label
+                  class="article-info"
+                  id="article-info-3"
+                >
+                  <p
+                    class="indent-16 text-justify text-xl line-clamp-3 max-w mb-5 my-2"
+                  >
+                    Istanbul, situated along the shores of the Bosphorus Strait,
+                    is the only city in the world bridging two continents,
+                    Europe and Asia; it is as old as civilization itself and as
+                    modern as carrying cell phones. My husband and I were very
+                    excited about vacationing in Istanbul. We flew with
+                    Lufthansa Airlines from Vancouver, B.C., stopping in
+                    Frankfurt, Germany to change planes and approximately 15
+                    hours later, we were there.
+                  </p>
+                  <a
+                    href="http://www.travelassist.com/mag/a139.html"
+                    class="justify-start text-md sm:text-xl py-2 text-red-500 underline underline-offset-4 decoration-red-500"
+                    target="_blank"
+                    >Read more...</a
+                  >
+                </label>
+              </label>
+              <label
+                class="article-info"
+                id="article-info-2"
+              >
+                <h2 class="title text-4xl">Asia with Dominic</h2>
+                <label
+                  class="article-info"
+                  id="article-info-4"
+                >
+                  <p
+                    class="indent-16 text-justify text-xl line-clamp-3 max-w mb-5 my-2"
+                  >
+                    March saw me again in Asia which in itself pleased me, for I
+                    love those countries in Asia I have been fortunate enough to
+                    visit and I love March. March as a month, perhaps more than
+                    others suggests opportunity, proffers hope and distances the
+                    horizon. Wherever I may be when Spring finds me, I always
+                    get excited about what may be around the corner, what that
+                    is now hidden will reveal itself over the coming months and
+                    will I have sufficient money to see any of it.
+                  </p>
+                  <a
+                    href="http://www.travelassist.com/mag/a139.html"
+                    class="justify-start text-md sm:text-xl py-2 text-red-500 underline underline-offset-4 decoration-red-500"
+                    target="_blank"
+                    >Read more...</a
+                  >
+                </label>
+              </label>
+            </div>
           </div>
         </div>
-      </div>
+        <div class="featured-description mx-auto"></div>
+      </section>
     </section>
-
-    <hr
-      id="featured"
-      class="w-full h-px mt-14 bg-gray-200 border-0 dark:bg-gray-70"
-    />
-    <hr class="border-gray-800" />
-    <h1 class="text-red-500 text-6xl font-black text-center my-4">INDEX</h1>
-    <hr class="border-gray-800 mb-2" />
-    <hr class="border-gray-800 mb-10" />
 
     <section
       id="index"
-      class="flex flex-col align-middle justify-center"
+      class="flex flex-col align-middle justify-center my-14"
     >
-      <h1>Check out TravelASSIST's Full Index</h1>
+      <hr class="w-full h-px mt-14 bg-gray-200 border-0 dark:bg-gray-70" />
+      <hr class="border-gray-800" />
+      <h1 class="text-red-500 text-5xl font-black text-center my-4">INDEX</h1>
+      <hr class="border-gray-800 mb-2" />
+      <hr class="border-gray-800" />
+      <div
+        id="index-img-container"
+        class="sm:flex-row mx-auto flex-col flex align-middle justify-center gap-4 mt-16 cursor-pointer"
+      >
+        <div>
+          <img
+            src="./public/travel-pics/pexels-markusspiske-1679772.jpg"
+            alt=""
+            class="mix-blend-darken"
+          />
+          <h2 class="relative text-2xl px-3 py-2 text-slate-950">ANTARCTICA</h2>
+        </div>
+        <div>
+          <img
+            src="./public/travel-pics/pexels-pixabay-210243.jpg"
+            alt=""
+          />
+          <h2 class="relative text-2xl px-3 py-2 text-slate-950">CARIBBEAN</h2>
+        </div>
+        <div>
+          <img
+            src="./public/travel-pics/pexels-quang-nguyen-vinh-222549-2649403.jpg"
+            alt=""
+          />
+          <h2 class="relative text-2xl px-3 py-2 text-slate-950">CHINA</h2>
+        </div>
+        <div class="sm:hidden md:block">
+          <img
+            src="./public/travel-pics/title-img.jpg"
+            alt=""
+          />
+          <h2 class="relative text-2xl px-3 py-2 text-slate-950">EUROPE</h2>
+        </div>
+        <div class="sm:hidden md:block">
+          <img
+            src="./public/travel-pics/pexels-fr3nks-287229.jpg"
+            alt=""
+          />
+          <h2 class="relative text-2xl px-3 py-2 text-slate-950">FRANCE</h2>
+        </div>
+      </div>
+      <a
+        target="_blank"
+        href="http://www.travelassist.com/mag/mag_home.html"
+        class="bg-red-500 hover:bg-red-600 hover:scale-105 text-white py-2 px-8 border text-2xl shadow mx-auto mt-12 cursor-pointer"
+      >
+        <h1>SEE FULL INDEX</h1>
+      </a>
     </section>
-    <footer></footer>
+    <footer class="h-96 mt-18 text-center">
+      <h3 class="pb-10">
+        © Copyright 1995-2012 ASSIST Information Services - All Rights Reserved
+      </h3>
+    </footer>
   </body>
 </html>
