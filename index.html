@@ -17,10 +17,12 @@
     />
     <title>TravelASSIST Magazine</title>
   </head>
-  <body class="bg-orange-50 flex-col flex align-middle justify-around px-6">
+  <body
+    class="bg-orange-50 flex-col flex align-middle justify-around px-6 mx-auto"
+  >
     <section
       id="title-page"
-      class="w-full my-6 md:my-0 lg:my-0 h-screen flex-shrink-0 flex flex-col sm:justify-center align-middle"
+      class="w-full flex-shrink-0 flex flex-col sm:justify-center align-middle mt-10"
     >
       <h1
         class="text-red-500 text-5xl font-black text-center sm:text-8xl lg:text-9xl"
@@ -37,7 +39,7 @@
         </h2>
       </div>
       <nav
-        class="uppercase text-2xl sm:text-4xl flex flex-col gap-2 px-2 pb-4 sm:pb-12 underline underline-offset-8"
+        class="uppercase text-2xl sm:text-3xl flex flex-col gap-2 px-2 pb-4 sm:pb-12 underline underline-offset-8 md:text-3xl"
       >
         <ul class="flex justify-between">
           <a
@@ -66,7 +68,7 @@
           >
         </ul>
       </nav>
-      <figure class="relative w-full h-4/6 sm:h-4/6 md:h-2/4 lg:h-2/5">
+      <figure class="relative w-full">
         <img
           src="./public/travel-pics/title-img.jpg"
           alt="travel image"
@@ -91,8 +93,11 @@
     </section>
     <section
       id="featured"
-      class="h-screen flex"
+      class="h-screen flex flex-col align-middle justify-center"
     >
+      <h1 class="text-red-500 text-5xl text-center sm:text-8xl lg:text-9xl">
+        FEATURED
+      </h1>
       <div class="featured-description">
         <div class="upper-part">
           <div
@@ -148,14 +153,14 @@
         name="slider"
         id="item-3"
       />
-      <div class="cards">
+      <div class="cards relative w-96 h-96">
         <label
           class="card"
           for="item-1"
           id="article-1"
         >
           <img
-            src="https://images.unsplash.com/photo-1530651788726-1dbf58eeef1f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=882&q=80"
+            src="./public/travel-pics/pexels-fr3nks-287229.jpg"
             alt="article"
           />
         </label>
@@ -165,7 +170,7 @@
           id="article-2"
         >
           <img
-            src="https://images.unsplash.com/photo-1559386484-97dfc0e15539?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1234&q=80"
+            src="./public/travel-pics/pexels-markusspiske-1679772.jpg"
             alt="article"
           />
         </label>
@@ -175,7 +180,7 @@
           id="article-3"
         >
           <img
-            src="https://images.unsplash.com/photo-1533461502717-83546f485d24?ixlib=rb-1.2.1&auto=format&fit=crop&w=900&q=60"
+            src="./public/travel-pics/pexels-pixabay-210243.jpg"
             alt="article"
           />
         </label>
