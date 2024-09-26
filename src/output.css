@@ -877,6 +877,10 @@ video {
   text-indent: 4rem;
 }
 
+.align-baseline {
+  vertical-align: baseline;
+}
+
 .align-middle {
   vertical-align: middle;
 }
