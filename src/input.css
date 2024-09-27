@@ -380,3 +380,7 @@ card:hover {
   background-color: #ef4444;
   border-color: #ef4444;
 }
+
+::-webkit-scrollbar {
+  width: 2px;
+}
