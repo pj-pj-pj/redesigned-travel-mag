@@ -662,6 +662,13 @@ video {
   margin-top: 1.25rem;
 }
 
+.line-clamp-1 {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+}
+
 .line-clamp-3 {
   overflow: hidden;
   display: -webkit-box;
@@ -758,8 +765,8 @@ video {
   gap: 1.25rem;
 }
 
-.overflow-scroll {
-  overflow: scroll;
+.overflow-x-visible {
+  overflow-x: visible;
 }
 
 .overflow-x-scroll {
@@ -1345,6 +1352,10 @@ card:hover {
 #item-8:checked ~ .progress-indicator #indicator-item-8 {
   background-color: #ef4444;
   border-color: #ef4444;
+}
+
+::-webkit-scrollbar {
+  width: 2px;
 }
 
 .hover\:scale-105:hover {
