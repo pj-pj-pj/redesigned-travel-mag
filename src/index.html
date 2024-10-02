@@ -2,254 +2,95 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0"
-    />
-    <link
-      rel="stylesheet"
-      href="output.css"
-    />
-    <link
-      rel="icon"
-      type="image/x-icon"
-      href="./public/faviconV2.png"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="output.css" />
+    <link rel="icon" type="image/x-icon" href="./public/faviconV2.png" />
     <title>TravelASSIST Magazine</title>
   </head>
   <body class="bg-orange-50 flex-col flex px-6 mx-auto h-full">
-    <section
-      id="title-page"
-      class="w-full flex flex-col mt-10 h-full"
-    >
-      <h1
-        class="line-clamp-1 text-red-500 text-5xl font-black text-center sm:text-8xl lg:text-9xl cursor-pointer hover:scale-105"
-      >
-        TravelASSIST
-      </h1>
-
-      <div class="inline-flex items-center justify-center w-full">
+    <header id="title-page" class="w-full flex flex-col mt-10 h-full">
+      <h1 class="line-clamp-1 text-red-500 text-5xl font-black text-center sm:text-8xl lg:text-9xl cursor-pointer hover:scale-105">TravelASSIST</h1>
+      <div id="txt-magazine-container" class="inline-flex items-center justify-center w-full">
         <hr class="w-full h-px my-8 bg-gray-200 border-0 dark:bg-gray-700" />
-        <h2
-          class="absolute px-6 font-medium -translate-x-1/2 left-1/2 dark:text-white dark:bg-black text-2xl md:text-3xl py-2 text-center"
-        >
-          MAGAZINE
-        </h2>
+        <h2 class="absolute px-6 font-medium -translate-x-1/2 left-1/2 dark:text-white dark:bg-black text-2xl md:text-3xl py-2 text-center">MAGAZINE</h2>
       </div>
-      <nav
-        class="uppercase text-2xl lg:text-3xl flex flex-col gap-2 px-2 pb-4 underline underline-offset-8 md:text-3xl"
-      >
+
+      <nav class="uppercase text-2xl lg:text-3xl flex flex-col gap-2 px-2 pb-4 underline underline-offset-8 md:text-3xl">
         <ul class="flex justify-between">
-          <a
-            href="#title-page"
-            class="text-red-500"
-            ><li>Home</li></a
-          >
-          <a
-            href="#index"
-            class="hover:text-red-500"
-            ><li>Index</li></a
-          >
+          <a href="#title-page" class="text-red-500"><li>Home</li></a>
+          <a href="#index" class="hover:text-red-500"><li>Index</li></a>
         </ul>
         <ul class="flex justify-between">
-          <a
-            href="http://www.travelassist.com/contact_main.html"
-            target="_blank"
-            class="hover:text-red-500 cursor-pointer"
-            ><li>Contact</li></a
-          >
+          <a href="http://www.travelassist.com/contact_main.html" target="_blank" class="hover:text-red-500 cursor-pointer"><li>Contact</li></a>
 
-          <a
-            href="#featured"
-            class="hover:text-red-500"
-            ><li>Featured</li></a
-          >
+          <a href="#featured" class="hover:text-red-500"><li>Featured</li></a>
         </ul>
       </nav>
-    </section>
+    </header>
+
     <figure class="relative w-full mt-5">
-      <img
-        src="./public/travel-pics/title-img.jpg"
-        alt="travel image"
-        class="object-cover h-full w-full"
-      />
-      <figcaption
-        class="bg-black bg-opacity-60 absolute px-6 pb-4 text-justify text-lg text-white bottom-0 w-full"
-      >
-        <h2 class="my-3 text-2xl sm:text-4xl sm:py-4 lg:py-2 text-center">
-          Home of the First Travel Magazine to be published on the Web!
-        </h2>
-        <p
-          class="indent-16 pb-2 sm:py-2 text-xs sm:text-base lg:max-w-4xl mx-auto lg:pb-2"
-        >
-          TravelASSIST Travel Magazine was first published in March of 1995. The
-          first monthly travel magazine on the web! Lots of magazines are
-          online, we hope ours will help you with your next vacation or holiday.
+      <img src="./public/travel-pics/title-img.jpg" alt="travel image" class="object-cover h-full w-full" />
+      <figcaption class="bg-black bg-opacity-60 absolute px-6 pb-4 text-justify text-lg text-white bottom-0 w-full">
+        <h2 class="my-3 text-2xl sm:text-4xl sm:py-4 lg:py-2 text-center">Home of the First Travel Magazine to be published on the Web!</h2>
+        <p class="indent-16 pb-2 sm:py-2 text-xs sm:text-base lg:max-w-4xl mx-auto lg:pb-2">
+          TravelASSIST Travel Magazine was first published in March of 1995. The first monthly travel magazine on the web! Lots of magazines are online, we hope
+          ours will help you with your next vacation or holiday.
         </p>
       </figcaption>
     </figure>
 
-    <section
-      id="featured"
-      class="py-20"
-    >
+    <section id="featured" class="py-20">
       <hr class="border-gray-800" />
-      <h1 class="text-red-500 text-5xl font-black text-center my-4">
-        FEATURED
-      </h1>
+      <h1 class="text-red-500 text-5xl font-black text-center my-4">FEATURED</h1>
       <hr class="border-gray-800 mb-2" />
       <hr class="border-gray-800" />
 
       <section class="container py-14">
-        <input
-          type="radio"
-          name="slider"
-          id="item-1"
-        />
-        <input
-          type="radio"
-          name="slider"
-          id="item-2"
-        />
-        <input
-          type="radio"
-          name="slider"
-          id="item-3"
-        />
-        <input
-          type="radio"
-          name="slider"
-          id="item-4"
-          checked
-        />
-        <input
-          type="radio"
-          name="slider"
-          id="item-5"
-        />
-        <input
-          type="radio"
-          name="slider"
-          id="item-6"
-        />
-        <input
-          type="radio"
-          name="slider"
-          id="item-7"
-        />
-        <input
-          type="radio"
-          name="slider"
-          id="item-8"
-        />
-        <div class="cards">
-          <label
-            class="card"
-            for="item-1"
-            id="article-1"
-          >
-            <img
-              src="./public/travel-pics/mexico.jpg"
-              alt="picture of mexico"
-            />
+        <input type="radio" name="slider" id="item-1" />
+        <input type="radio" name="slider" id="item-2" />
+        <input type="radio" name="slider" id="item-3" />
+        <input type="radio" name="slider" id="item-4" checked />
+        <input type="radio" name="slider" id="item-5" />
+        <input type="radio" name="slider" id="item-6" />
+        <input type="radio" name="slider" id="item-7" />
+        <input type="radio" name="slider" id="item-8" />
+
+        <div id="cards" class="cards">
+          <label class="card" for="item-1" id="article-1">
+            <img src="./public/travel-pics/mexico.jpg" alt="picture of mexico" />
           </label>
-          <label
-            class="card"
-            for="item-2"
-            id="article-2"
-          >
-            <img
-              src="./public/travel-pics/hawaii.jpg"
-              alt="picture of hawaii"
-            />
+          <label class="card" for="item-2" id="article-2">
+            <img src="./public/travel-pics/hawaii.jpg" alt="picture of hawaii" />
           </label>
-          <label
-            class="card"
-            for="item-3"
-            id="article-3"
-          >
-            <img
-              src="./public/travel-pics/traveling with lori.jpg"
-              alt="traveling picture"
-            />
+          <label class="card" for="item-3" id="article-3">
+            <img src="./public/travel-pics/traveling with lori.jpg" alt="traveling picture" />
           </label>
-          <label
-            class="card"
-            for="item-4"
-            id="article-4"
-          >
-            <img
-              src="./public/travel-pics/asia.jpg"
-              alt="picture in asia"
-            />
+          <label class="card" for="item-4" id="article-4">
+            <img src="./public/travel-pics/asia.jpg" alt="picture in asia" />
           </label>
-          <label
-            class="card"
-            for="item-5"
-            id="article-5"
-          >
-            <img
-              src="./public/travel-pics/vics-abt-guide.jpg"
-              alt="a travel picture"
-            />
+          <label class="card" for="item-5" id="article-5">
+            <img src="./public/travel-pics/vics-abt-guide.jpg" alt="a travel picture" />
           </label>
-          <label
-            class="card"
-            for="item-6"
-            id="article-6"
-          >
-            <img
-              src="./public/travel-pics/California.jpeg"
-              alt="picture of california"
-            />
+          <label class="card" for="item-6" id="article-6">
+            <img src="./public/travel-pics/California.jpeg" alt="picture of california" />
           </label>
-          <label
-            class="card"
-            for="item-7"
-            id="article-7"
-          >
-            <img
-              src="./public/travel-pics/dubai.jpg"
-              alt="dubai picture"
-            />
+          <label class="card" for="item-7" id="article-7">
+            <img src="./public/travel-pics/dubai.jpg" alt="dubai picture" />
           </label>
-          <label
-            class="card"
-            for="item-8"
-            id="article-8"
-          >
-            <img
-              src="./public/travel-pics/Florida.jpeg"
-              alt="picture of florida"
-            />
+          <label class="card" for="item-8" id="article-8">
+            <img src="./public/travel-pics/Florida.jpeg" alt="picture of florida" />
           </label>
         </div>
-        <div class="featured-description mx-auto articles">
+        <div id="featured-description" class="featured-description mx-auto articles">
           <div class="upper-part">
-            <div
-              class="info-area"
-              id="test"
-            >
-              <label
-                class="article-info"
-                id="article-info-1"
-              >
+            <div class="info-area" id="test">
+              <label class="article-info" id="article-info-1">
                 <h2 class="title text-4xl whitespace-nowrap">Mexico</h2>
-                <label
-                  class="article-info"
-                  id="article-info-1"
-                >
-                  <p
-                    class="indent-16 text-justify text-xl line-clamp-3 max-w mb-5 my-2"
-                  >
-                    The Palmilla resort was founded in 1956 with 15 rooms and
-                    quickly became an intimate hideaway for celebrities like
-                    Bing Crosby, Lucille Ball & Desi Arnaz, John Wayne, and
-                    President Dwight D. Eisenhower. Today the resort has
-                    undergone an $80 million dollar face-lift by One & Only
-                    Resorts making it one of the premier beach resorts in the
-                    world. And it continues to attract celebs and high-rollers
-                    from around the world.
+                <label class="article-info" id="article-info-1">
+                  <p class="indent-16 text-justify text-xl line-clamp-3 max-w mb-5 my-2">
+                    The Palmilla resort was founded in 1956 with 15 rooms and quickly became an intimate hideaway for celebrities like Bing Crosby, Lucille Ball
+                    & Desi Arnaz, John Wayne, and President Dwight D. Eisenhower. Today the resort has undergone an $80 million dollar face-lift by One & Only
+                    Resorts making it one of the premier beach resorts in the world. And it continues to attract celebs and high-rollers from around the world.
                   </p>
                   <a
                     href="http://www.travelassist.com/mag/a139.html"
@@ -259,23 +100,12 @@
                   >
                 </label>
               </label>
-              <label
-                class="article-info"
-                id="article-info-2"
-              >
+              <label class="article-info" id="article-info-2">
                 <h2 class="title text-4xl whitespace-nowrap">Hawaii</h2>
-                <label
-                  class="article-info"
-                  id="article-info-2"
-                >
-                  <p
-                    class="indent-16 text-justify text-xl line-clamp-3 max-w mb-5 my-2"
-                  >
-                    The Pride of Aloha, from Norwegian Cruise Lines new
-                    subsidiary NCL America, entered regular service in the
-                    Hawaiian Island on July 4th, 2004. I was able to board the
-                    Pride on July 3rd and experience the ship during a one nigh
-                    charitable fundraiser cruise.
+                <label class="article-info" id="article-info-2">
+                  <p class="indent-16 text-justify text-xl line-clamp-3 max-w mb-5 my-2">
+                    The Pride of Aloha, from Norwegian Cruise Lines new subsidiary NCL America, entered regular service in the Hawaiian Island on July 4th,
+                    2004. I was able to board the Pride on July 3rd and experience the ship during a one nigh charitable fundraiser cruise.
                   </p>
                   <a
                     href="http://www.travelassist.com/mag/a134.html"
@@ -285,28 +115,14 @@
                   >
                 </label>
               </label>
-              <label
-                class="article-info"
-                id="article-info-3"
-              >
-                <h2 class="title text-4xl whitespace-nowrap">
-                  Traveling w/ Lori
-                </h2>
-                <label
-                  class="article-info"
-                  id="article-info-3"
-                >
-                  <p
-                    class="indent-16 text-justify text-xl line-clamp-3 max-w mb-5 my-2"
-                  >
-                    Istanbul, situated along the shores of the Bosphorus Strait,
-                    is the only city in the world bridging two continents,
-                    Europe and Asia; it is as old as civilization itself and as
-                    modern as carrying cell phones. My husband and I were very
-                    excited about vacationing in Istanbul. We flew with
-                    Lufthansa Airlines from Vancouver, B.C., stopping in
-                    Frankfurt, Germany to change planes and approximately 15
-                    hours later, we were there.
+              <label class="article-info" id="article-info-3">
+                <h2 class="title text-4xl whitespace-nowrap">Traveling w/ Lori</h2>
+                <label class="article-info" id="article-info-3">
+                  <p class="indent-16 text-justify text-xl line-clamp-3 max-w mb-5 my-2">
+                    Istanbul, situated along the shores of the Bosphorus Strait, is the only city in the world bridging two continents, Europe and Asia; it is
+                    as old as civilization itself and as modern as carrying cell phones. My husband and I were very excited about vacationing in Istanbul. We
+                    flew with Lufthansa Airlines from Vancouver, B.C., stopping in Frankfurt, Germany to change planes and approximately 15 hours later, we were
+                    there.
                   </p>
                   <a
                     href="http://www.travelassist.com/mag/a138.html"
@@ -316,28 +132,14 @@
                   >
                 </label>
               </label>
-              <label
-                class="article-info"
-                id="article-info-4"
-              >
-                <h2 class="title text-4xl whitespace-nowrap">
-                  Asia with Dominic
-                </h2>
-                <label
-                  class="article-info"
-                  id="article-info-4"
-                >
-                  <p
-                    class="indent-16 text-justify text-xl line-clamp-3 max-w mb-5 my-2"
-                  >
-                    March saw me again in Asia which in itself pleased me, for I
-                    love those countries in Asia I have been fortunate enough to
-                    visit and I love March. March as a month, perhaps more than
-                    others suggests opportunity, proffers hope and distances the
-                    horizon. Wherever I may be when Spring finds me, I always
-                    get excited about what may be around the corner, what that
-                    is now hidden will reveal itself over the coming months and
-                    will I have sufficient money to see any of it.
+              <label class="article-info" id="article-info-4">
+                <h2 class="title text-4xl whitespace-nowrap">Asia with Dominic</h2>
+                <label class="article-info" id="article-info-4">
+                  <p class="indent-16 text-justify text-xl line-clamp-3 max-w mb-5 my-2">
+                    March saw me again in Asia which in itself pleased me, for I love those countries in Asia I have been fortunate enough to visit and I love
+                    March. March as a month, perhaps more than others suggests opportunity, proffers hope and distances the horizon. Wherever I may be when
+                    Spring finds me, I always get excited about what may be around the corner, what that is now hidden will reveal itself over the coming months
+                    and will I have sufficient money to see any of it.
                   </p>
                   <a
                     href="http://www.travelassist.com/mag/a135.html"
@@ -347,26 +149,13 @@
                   >
                 </label>
               </label>
-              <label
-                class="article-info"
-                id="article-info-5"
-              >
-                <h2 class="title text-4xl whitespace-nowrap">
-                  Vic's ABOUT Guide
-                </h2>
-                <label
-                  class="article-info"
-                  id="article-info-5"
-                >
-                  <p
-                    class="indent-16 text-justify text-xl line-clamp-3 max-w mb-5 my-2"
-                  >
-                    When a casino vacation comes to mind, one generally thinks
-                    about megaresorts, expensive restaurants with celebrity
-                    chefs, and explosive volcanoes. This is true for the almost
-                    34 million people who visited Las Vegas last year. But some
-                    people are just burnt out on the entire Vegas party scene,
-                    the cure to that? RENO!
+              <label class="article-info" id="article-info-5">
+                <h2 class="title text-4xl whitespace-nowrap">Vic's ABOUT Guide</h2>
+                <label class="article-info" id="article-info-5">
+                  <p class="indent-16 text-justify text-xl line-clamp-3 max-w mb-5 my-2">
+                    When a casino vacation comes to mind, one generally thinks about megaresorts, expensive restaurants with celebrity chefs, and explosive
+                    volcanoes. This is true for the almost 34 million people who visited Las Vegas last year. But some people are just burnt out on the entire
+                    Vegas party scene, the cure to that? RENO!
                   </p>
                   <a
                     href="http://www.travelassist.com/mag/vic_7.html"
@@ -376,25 +165,13 @@
                   >
                 </label>
               </label>
-              <label
-                class="article-info"
-                id="article-info-6"
-              >
+              <label class="article-info" id="article-info-6">
                 <h2 class="title text-4xl whitespace-nowrap">California</h2>
-                <label
-                  class="article-info"
-                  id="article-info-6"
-                >
-                  <p
-                    class="indent-16 text-justify text-xl line-clamp-3 max-w mb-5 my-2"
-                  >
-                    What does a CABIN bus look like? I understand it isn't a
-                    normal bus, but an overnight sleeper bus full of beds that
-                    runs between San Francisco and Los Angeles. The route is
-                    pretty simple. Two overnight CABIN buses depart at 11pm; one
-                    is heading South from San Francisco and another heading
-                    North out of Los Angeles. Both arrive at 7am at their
-                    destinations.
+                <label class="article-info" id="article-info-6">
+                  <p class="indent-16 text-justify text-xl line-clamp-3 max-w mb-5 my-2">
+                    What does a CABIN bus look like? I understand it isn't a normal bus, but an overnight sleeper bus full of beds that runs between San
+                    Francisco and Los Angeles. The route is pretty simple. Two overnight CABIN buses depart at 11pm; one is heading South from San Francisco and
+                    another heading North out of Los Angeles. Both arrive at 7am at their destinations.
                   </p>
                   <a
                     href="https://www.murrayontravel.com/usa---california/"
@@ -404,33 +181,16 @@
                   >
                 </label>
               </label>
-              <label
-                class="article-info"
-                id="article-info-7"
-              >
-                <h2 class="title text-4xl whitespace-nowrap">
-                  Harper's Report
-                </h2>
-                <label
-                  class="article-info"
-                  id="article-info-7"
-                >
-                  <p
-                    class="indent-16 text-justify text-xl line-clamp-3 max-w mb-5 my-2"
-                  >
-                    Though it’s increasingly common for travelers to make a
-                    flight connection through Dubai’s ultramodern airport, the
-                    second busiest in the world after Atlanta’s, many Americans
-                    still don’t quite know what to make of this booming Persian
-                    Gulf city with a population of over three million. The
-                    discovery of oil in 1966 began the rapid transformation of
-                    Dubai, but black gold is only part of the story. Today,
-                    petroleum accounts for just 1 percent of its thriving
-                    economy; financial services, construction and tourism are
-                    its largest industries. The emirate is on the road to
-                    becoming one of the world’s great entrepôts, aiming to be a
-                    21st-century version of Hong Kong, New York or Singapore,
-                    and it’s now a destination in its own right.
+              <label class="article-info" id="article-info-7">
+                <h2 class="title text-4xl whitespace-nowrap">Harper's Report</h2>
+                <label class="article-info" id="article-info-7">
+                  <p class="indent-16 text-justify text-xl line-clamp-3 max-w mb-5 my-2">
+                    Though it’s increasingly common for travelers to make a flight connection through Dubai’s ultramodern airport, the second busiest in the
+                    world after Atlanta’s, many Americans still don’t quite know what to make of this booming Persian Gulf city with a population of over three
+                    million. The discovery of oil in 1966 began the rapid transformation of Dubai, but black gold is only part of the story. Today, petroleum
+                    accounts for just 1 percent of its thriving economy; financial services, construction and tourism are its largest industries. The emirate is
+                    on the road to becoming one of the world’s great entrepôts, aiming to be a 21st-century version of Hong Kong, New York or Singapore, and
+                    it’s now a destination in its own right.
                   </p>
                   <a
                     href="https://andrewharper.com/read/article/a-game-changing-hotel-in-dubai/"
@@ -440,24 +200,13 @@
                   >
                 </label>
               </label>
-              <label
-                class="article-info"
-                id="article-info-8"
-              >
+              <label class="article-info" id="article-info-8">
                 <h2 class="title text-4xl whitespace-nowrap">Florida</h2>
-                <label
-                  class="article-info"
-                  id="article-info-8"
-                >
-                  <p
-                    class="indent-16 text-justify text-xl line-clamp-3 max-w mb-5 my-2"
-                  >
-                    Key West, North America's most eclectic town, called by
-                    long-time residents "the end of the road," is the gathering
-                    place for the homeless with an artistic bend, musicians,
-                    millionaires, tipplers, treasure hunters and thousands of
-                    mobile middle-aged singles who take a stab at the town for a
-                    few months.
+                <label class="article-info" id="article-info-8">
+                  <p class="indent-16 text-justify text-xl line-clamp-3 max-w mb-5 my-2">
+                    Key West, North America's most eclectic town, called by long-time residents "the end of the road," is the gathering place for the homeless
+                    with an artistic bend, musicians, millionaires, tipplers, treasure hunters and thousands of mobile middle-aged singles who take a stab at
+                    the town for a few months.
                   </p>
                   <a
                     href="http://www.travelassist.com/mag/a123.html"
@@ -471,96 +220,43 @@
           </div>
         </div>
         <div class="progress-indicator flex gap-1">
-          <label
-            id="indicator-item-1"
-            class="dot w-2 h-2 border-gray-500 border rounded-full"
-          >
-          </label>
-          <label
-            id="indicator-item-2"
-            class="dot w-2 h-2 border-gray-500 border rounded-full"
-          >
-          </label>
-          <label
-            id="indicator-item-3"
-            class="dot w-2 h-2 border-gray-500 border rounded-full"
-          >
-          </label>
-          <label
-            id="indicator-item-4"
-            class="dot w-2 h-2 border-gray-500 border rounded-full"
-          >
-          </label>
-          <label
-            id="indicator-item-5"
-            class="dot w-2 h-2 border-gray-500 border rounded-full"
-          >
-          </label>
-          <label
-            id="indicator-item-6"
-            class="dot w-2 h-2 border-gray-500 border rounded-full"
-          >
-          </label>
-          <label
-            id="indicator-item-7"
-            class="dot w-2 h-2 border-gray-500 border rounded-full"
-          >
-          </label>
-          <label
-            id="indicator-item-8"
-            class="dot w-2 h-2 border-gray-500 border rounded-full"
-          >
-          </label>
+          <label id="indicator-item-1" class="dot w-2 h-2 border-gray-500 border rounded-full"> </label>
+          <label id="indicator-item-2" class="dot w-2 h-2 border-gray-500 border rounded-full"> </label>
+          <label id="indicator-item-3" class="dot w-2 h-2 border-gray-500 border rounded-full"> </label>
+          <label id="indicator-item-4" class="dot w-2 h-2 border-gray-500 border rounded-full"> </label>
+          <label id="indicator-item-5" class="dot w-2 h-2 border-gray-500 border rounded-full"> </label>
+          <label id="indicator-item-6" class="dot w-2 h-2 border-gray-500 border rounded-full"> </label>
+          <label id="indicator-item-7" class="dot w-2 h-2 border-gray-500 border rounded-full"> </label>
+          <label id="indicator-item-8" class="dot w-2 h-2 border-gray-500 border rounded-full"> </label>
         </div>
       </section>
     </section>
 
-    <section
-      id="index"
-      class="flex flex-col align-middle justify-center"
-    >
-      <hr class="w-full h-px bg-gray-200 border-0 dark:bg-gray-70" />
+    <section id="index" class="flex flex-col align-middle justify-center">
       <hr class="border-gray-800" />
       <h1 class="text-red-500 text-5xl font-black text-center my-4">INDEX</h1>
       <hr class="border-gray-800 mb-2" />
       <hr class="border-gray-800" />
-      <div
-        id="index-img-container"
-        class="sm:flex-row mx-auto flex-col flex align-middle justify-center gap-4 mt-32 cursor-pointer"
-      >
+
+      <div id="index-img-container" class="sm:flex-row mx-auto flex-col flex align-middle justify-center gap-4 mt-32 cursor-pointer">
         <div>
-          <img
-            src="./public/travel-pics/antarctica.jpg"
-            alt="Picture of Antarctica"
-          />
+          <img src="./public/travel-pics/antarctica.jpg" alt="Picture of Antarctica" />
           <h2 class="relative text-2xl px-3 py-2 text-slate-950">ANTARCTICA</h2>
         </div>
         <div>
-          <img
-            src="./public/travel-pics/carribean.jpg"
-            alt="Picture of the Caribbean"
-          />
+          <img src="./public/travel-pics/carribean.jpg" alt="Picture of the Caribbean" />
           <h2 class="relative text-2xl px-3 py-2 text-slate-950">CARIBBEAN</h2>
         </div>
         <div>
-          <img
-            src="./public/travel-pics/china.jpg"
-            alt="Picture of China"
-          />
+          <img src="./public/travel-pics/china.jpg" alt="Picture of China" />
           <h2 class="relative text-2xl px-3 py-2 text-slate-950">CHINA</h2>
         </div>
         <div class="sm:hidden md:block">
-          <img
-            src="./public/travel-pics/europe.jpg"
-            alt="Picture of Europe"
-          />
+          <img src="./public/travel-pics/europe.jpg" alt="Picture of Europe" />
           <h2 class="relative text-2xl px-3 py-2 text-slate-950">EUROPE</h2>
         </div>
         <div class="sm:hidden lg:block">
-          <img
-            src="./public/travel-pics/france.jpg"
-            alt="Picture of France"
-          />
+          <img src="./public/travel-pics/france.jpg" alt="Picture of France" />
           <h2 class="relative text-2xl px-3 py-2 text-slate-950">FRANCE</h2>
         </div>
       </div>
@@ -572,30 +268,18 @@
         <h1>SEE FULL INDEX</h1>
       </a>
     </section>
+
     <footer class="h-96 mt-16 text-center">
       <hr class="my-10 border-gray-800" />
-      <div
-        id="logos"
-        class="flex align-middle justify-center gap-5 py-4"
-      >
+      <div id="logos" class="flex align-middle justify-center gap-5 py-4">
         <a href="https://github.com/pj-pj-pj/redesigned-travel-mag">
-          <img
-            src="./public/github-sign.png"
-            alt="Github logo"
-            class="invert w-10 h-10 hover:scale-105"
+          <img src="./public/github-sign.png" alt="Github logo" class="invert w-10 h-10 hover:scale-105"
         /></a>
-        <a
-          href="http://www.travelassist.com/mag/mag_home.html"
-          target="_blank"
-          ><img
-            src="./public/faviconV2.png"
-            class="w-10 h-10 hover:scale-105"
-            alt="TravelASSIST logo"
+        <a href="http://www.travelassist.com/mag/mag_home.html" target="_blank"
+          ><img src="./public/faviconV2.png" class="w-10 h-10 hover:scale-105" alt="TravelASSIST logo"
         /></a>
       </div>
-      <h3 class="pb-16">
-        © Copyright 1995-2012 ASSIST Information Services - All Rights Reserved
-      </h3>
+      <h3 class="pb-16">© Copyright 1995-2012 ASSIST Information Services - All Rights Reserved</h3>
     </footer>
   </body>
 </html>
