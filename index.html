@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -7,28 +7,35 @@
     <link rel="icon" type="image/x-icon" href="./public/faviconV2.png" />
     <title>TravelASSIST Magazine</title>
   </head>
-  <body class="bg-orange-50 flex-col flex px-6 mx-auto h-full">
-    <header id="title-page" class="w-full flex flex-col mt-10 h-full">
-      <h1 class="line-clamp-1 text-red-500 text-5xl font-black text-center sm:text-8xl lg:text-9xl cursor-pointer hover:scale-105">TravelASSIST</h1>
+  <body class="bg-orange-50 flex-col flex px-6 h-full">
+    <header id="title-page" class="w-full flex flex-col mt-6 h-full">
+      <h1 class="line-clamp-1 text-red-500 text-5xl font-black text-center lg:text-7xl cursor-pointer z-50">TravelASSIST</h1>
       <div id="txt-magazine-container" class="inline-flex items-center justify-center w-full">
-        <hr class="w-full h-px my-8 bg-gray-200 border-0 dark:bg-gray-700" />
-        <h2 class="absolute px-6 font-medium -translate-x-1/2 left-1/2 dark:text-white dark:bg-black text-2xl md:text-3xl py-2 text-center">MAGAZINE</h2>
+        <hr class="w-full h-px mt-3 mb-6 border-slate-950" />
+        <h1 class="absolute px-4 pb-3 font-black -translate-x-1/2 left-1/2 text-slate-950 bg-orange-50 text-2xl md:text-3xl text-center">MAGAZINE</h1>
       </div>
 
-      <nav class="uppercase text-2xl lg:text-3xl flex flex-col gap-2 px-2 pb-4 underline underline-offset-8 md:text-3xl">
+      <nav class="uppercase text-xl flex flex-col gap-3 z-50">
         <ul class="flex justify-between">
-          <a href="#title-page" class="text-red-500"><li>Home</li></a>
-          <a href="#index" class="hover:text-red-500"><li>Index</li></a>
+          <li class="border border-slate-950 pr-3 bg-slate-950 text-orange-50 hover:text-slate-950 hover:bg-orange-100">
+            <span class="px-1 mr-2 bg-slate-950">&nbsp</span><a href="#title-page">Home</a>
+          </li>
+          <li class="border border-slate-950 pl-3 py-0 hover:bg-slate-950 hover:text-orange-50">
+            <a href="#index">Index</a><span class="px-1 my-0 ml-2 bg-slate-900">&nbsp</span>
+          </li>
         </ul>
         <ul class="flex justify-between">
-          <a href="http://www.travelassist.com/contact_main.html" target="_blank" class="hover:text-red-500 cursor-pointer"><li>Contact</li></a>
-
-          <a href="#featured" class="hover:text-red-500"><li>Featured</li></a>
+          <li class="border border-slate-950 pr-3 hover:bg-slate-950 hover:text-orange-50">
+            <span class="px-1 mr-2 bg-slate-900">&nbsp</span><a href="http://www.travelassist.com/contact_main.html" target="_blank">Contact</a>
+          </li>
+          <li class="border border-slate-950 pl-3 hover:bg-slate-950 hover:text-orange-50">
+            <a href="#featured">Featured</a><span class="px-1 ml-2 bg-slate-900">&nbsp</span>
+          </li>
         </ul>
       </nav>
     </header>
 
-    <figure class="relative w-full mt-5">
+    <figure class="relative w-full mt-7">
       <img src="./public/travel-pics/title-img.jpg" alt="travel image" class="object-cover h-full w-full" />
       <figcaption class="bg-black bg-opacity-60 absolute px-6 pb-4 text-justify text-lg text-white bottom-0 w-full">
         <h2 class="my-3 text-2xl sm:text-4xl sm:py-4 lg:py-2 text-center">Home of the First Travel Magazine to be published on the Web!</h2>
@@ -39,22 +46,26 @@
       </figcaption>
     </figure>
 
-    <section id="featured" class="py-20">
+    <section id="featured" class="pt-6">
       <hr class="border-gray-800" />
-      <h1 class="text-red-500 text-5xl font-black text-center my-4">FEATURED</h1>
+      <h1 class="text-red-500 text-4xl font-black text-center my-2">FEATURED</h1>
       <hr class="border-gray-800 mb-2" />
       <hr class="border-gray-800" />
 
-      <section class="container py-14">
-        <input type="radio" name="slider" id="item-1" />
+      <section class="container pb-12">
+        <input type="radio" name="slider" id="item-1" checked />
         <input type="radio" name="slider" id="item-2" />
         <input type="radio" name="slider" id="item-3" />
-        <input type="radio" name="slider" id="item-4" checked />
+        <input type="radio" name="slider" id="item-4" />
         <input type="radio" name="slider" id="item-5" />
         <input type="radio" name="slider" id="item-6" />
         <input type="radio" name="slider" id="item-7" />
         <input type="radio" name="slider" id="item-8" />
 
+        <div class="arrows">
+          <span> &#x2039;</span>
+          <span> &#x203A;</span>
+        </div>
         <div id="cards" class="cards">
           <label class="card" for="item-1" id="article-1">
             <img src="./public/travel-pics/mexico.jpg" alt="picture of mexico" />
@@ -85,9 +96,9 @@
           <div class="upper-part">
             <div class="info-area" id="test">
               <label class="article-info" id="article-info-1">
-                <h2 class="title text-4xl whitespace-nowrap">Mexico</h2>
+                <h2 class="title text-2xl whitespace-nowrap">Mexico</h2>
                 <label class="article-info" id="article-info-1">
-                  <p class="indent-16 text-justify text-xl line-clamp-3 max-w mb-5 my-2">
+                  <p class="indent-16 text-justify line-clamp-3 max-w mb-5 my-2">
                     The Palmilla resort was founded in 1956 with 15 rooms and quickly became an intimate hideaway for celebrities like Bing Crosby, Lucille Ball
                     & Desi Arnaz, John Wayne, and President Dwight D. Eisenhower. Today the resort has undergone an $80 million dollar face-lift by One & Only
                     Resorts making it one of the premier beach resorts in the world. And it continues to attract celebs and high-rollers from around the world.
@@ -101,9 +112,9 @@
                 </label>
               </label>
               <label class="article-info" id="article-info-2">
-                <h2 class="title text-4xl whitespace-nowrap">Hawaii</h2>
+                <h2 class="title whitespace-nowrap">Hawaii</h2>
                 <label class="article-info" id="article-info-2">
-                  <p class="indent-16 text-justify text-xl line-clamp-3 max-w mb-5 my-2">
+                  <p class="indent-16 text-justify line-clamp-3 max-w mb-5 my-2">
                     The Pride of Aloha, from Norwegian Cruise Lines new subsidiary NCL America, entered regular service in the Hawaiian Island on July 4th,
                     2004. I was able to board the Pride on July 3rd and experience the ship during a one nigh charitable fundraiser cruise.
                   </p>
@@ -116,9 +127,9 @@
                 </label>
               </label>
               <label class="article-info" id="article-info-3">
-                <h2 class="title text-4xl whitespace-nowrap">Traveling w/ Lori</h2>
+                <h2 class="title whitespace-nowrap">Traveling w/ Lori</h2>
                 <label class="article-info" id="article-info-3">
-                  <p class="indent-16 text-justify text-xl line-clamp-3 max-w mb-5 my-2">
+                  <p class="indent-16 text-justify line-clamp-3 max-w mb-5 my-2">
                     Istanbul, situated along the shores of the Bosphorus Strait, is the only city in the world bridging two continents, Europe and Asia; it is
                     as old as civilization itself and as modern as carrying cell phones. My husband and I were very excited about vacationing in Istanbul. We
                     flew with Lufthansa Airlines from Vancouver, B.C., stopping in Frankfurt, Germany to change planes and approximately 15 hours later, we were
@@ -133,9 +144,9 @@
                 </label>
               </label>
               <label class="article-info" id="article-info-4">
-                <h2 class="title text-4xl whitespace-nowrap">Asia with Dominic</h2>
+                <h2 class="title whitespace-nowrap">Asia with Dominic</h2>
                 <label class="article-info" id="article-info-4">
-                  <p class="indent-16 text-justify text-xl line-clamp-3 max-w mb-5 my-2">
+                  <p class="indent-16 text-justify line-clamp-3 max-w mb-5 my-2">
                     March saw me again in Asia which in itself pleased me, for I love those countries in Asia I have been fortunate enough to visit and I love
                     March. March as a month, perhaps more than others suggests opportunity, proffers hope and distances the horizon. Wherever I may be when
                     Spring finds me, I always get excited about what may be around the corner, what that is now hidden will reveal itself over the coming months
@@ -150,9 +161,9 @@
                 </label>
               </label>
               <label class="article-info" id="article-info-5">
-                <h2 class="title text-4xl whitespace-nowrap">Vic's ABOUT Guide</h2>
+                <h2 class="title whitespace-nowrap">Vic's ABOUT Guide</h2>
                 <label class="article-info" id="article-info-5">
-                  <p class="indent-16 text-justify text-xl line-clamp-3 max-w mb-5 my-2">
+                  <p class="indent-16 text-justify line-clamp-3 max-w mb-5 my-2">
                     When a casino vacation comes to mind, one generally thinks about megaresorts, expensive restaurants with celebrity chefs, and explosive
                     volcanoes. This is true for the almost 34 million people who visited Las Vegas last year. But some people are just burnt out on the entire
                     Vegas party scene, the cure to that? RENO!
@@ -166,9 +177,9 @@
                 </label>
               </label>
               <label class="article-info" id="article-info-6">
-                <h2 class="title text-4xl whitespace-nowrap">California</h2>
+                <h2 class="title whitespace-nowrap">California</h2>
                 <label class="article-info" id="article-info-6">
-                  <p class="indent-16 text-justify text-xl line-clamp-3 max-w mb-5 my-2">
+                  <p class="indent-16 text-justify line-clamp-3 max-w mb-5 my-2">
                     What does a CABIN bus look like? I understand it isn't a normal bus, but an overnight sleeper bus full of beds that runs between San
                     Francisco and Los Angeles. The route is pretty simple. Two overnight CABIN buses depart at 11pm; one is heading South from San Francisco and
                     another heading North out of Los Angeles. Both arrive at 7am at their destinations.
@@ -182,9 +193,9 @@
                 </label>
               </label>
               <label class="article-info" id="article-info-7">
-                <h2 class="title text-4xl whitespace-nowrap">Harper's Report</h2>
+                <h2 class="title whitespace-nowrap">Harper's Report</h2>
                 <label class="article-info" id="article-info-7">
-                  <p class="indent-16 text-justify text-xl line-clamp-3 max-w mb-5 my-2">
+                  <p class="indent-16 text-justify line-clamp-3 max-w mb-5 my-2">
                     Though it’s increasingly common for travelers to make a flight connection through Dubai’s ultramodern airport, the second busiest in the
                     world after Atlanta’s, many Americans still don’t quite know what to make of this booming Persian Gulf city with a population of over three
                     million. The discovery of oil in 1966 began the rapid transformation of Dubai, but black gold is only part of the story. Today, petroleum
@@ -201,9 +212,9 @@
                 </label>
               </label>
               <label class="article-info" id="article-info-8">
-                <h2 class="title text-4xl whitespace-nowrap">Florida</h2>
+                <h2 class="title whitespace-nowrap">Florida</h2>
                 <label class="article-info" id="article-info-8">
-                  <p class="indent-16 text-justify text-xl line-clamp-3 max-w mb-5 my-2">
+                  <p class="indent-16 text-justify line-clamp-3 max-w mb-5 my-2">
                     Key West, North America's most eclectic town, called by long-time residents "the end of the road," is the gathering place for the homeless
                     with an artistic bend, musicians, millionaires, tipplers, treasure hunters and thousands of mobile middle-aged singles who take a stab at
                     the town for a few months.
@@ -219,26 +230,26 @@
             </div>
           </div>
         </div>
-        <div class="progress-indicator flex gap-1">
-          <label id="indicator-item-1" class="dot w-2 h-2 border-gray-500 border rounded-full"> </label>
-          <label id="indicator-item-2" class="dot w-2 h-2 border-gray-500 border rounded-full"> </label>
-          <label id="indicator-item-3" class="dot w-2 h-2 border-gray-500 border rounded-full"> </label>
-          <label id="indicator-item-4" class="dot w-2 h-2 border-gray-500 border rounded-full"> </label>
-          <label id="indicator-item-5" class="dot w-2 h-2 border-gray-500 border rounded-full"> </label>
-          <label id="indicator-item-6" class="dot w-2 h-2 border-gray-500 border rounded-full"> </label>
-          <label id="indicator-item-7" class="dot w-2 h-2 border-gray-500 border rounded-full"> </label>
-          <label id="indicator-item-8" class="dot w-2 h-2 border-gray-500 border rounded-full"> </label>
+        <div class="progress-indicator flex gap-1 mt-2">
+          <label id="indicator-item-1" class="dot border-gray-500 border rounded-full"> </label>
+          <label id="indicator-item-2" class="dot border-gray-500 border rounded-full"> </label>
+          <label id="indicator-item-3" class="dot border-gray-500 border rounded-full"> </label>
+          <label id="indicator-item-4" class="dot border-gray-500 border rounded-full"> </label>
+          <label id="indicator-item-5" class="dot border-gray-500 border rounded-full"> </label>
+          <label id="indicator-item-6" class="dot border-gray-500 border rounded-full"> </label>
+          <label id="indicator-item-7" class="dot border-gray-500 border rounded-full"> </label>
+          <label id="indicator-item-8" class="dot border-gray-500 border rounded-full"> </label>
         </div>
       </section>
     </section>
 
-    <section id="index" class="flex flex-col align-middle justify-center">
+    <section id="index" class="py-6 flex flex-col align-middle justify-center">
       <hr class="border-gray-800" />
-      <h1 class="text-red-500 text-5xl font-black text-center my-4">INDEX</h1>
+      <h1 class="text-red-500 text-4xl font-black text-center my-2">INDEX</h1>
       <hr class="border-gray-800 mb-2" />
       <hr class="border-gray-800" />
 
-      <div id="index-img-container" class="sm:flex-row mx-auto flex-col flex align-middle justify-center gap-4 mt-32 cursor-pointer">
+      <div id="index-img-container" class="sm:flex-row mx-auto flex-col flex align-middle justify-center gap-4 mt-12 cursor-pointer">
         <div>
           <img src="./public/travel-pics/antarctica.jpg" alt="Picture of Antarctica" />
           <h2 class="relative text-2xl px-3 py-2 text-slate-950">ANTARCTICA</h2>
@@ -263,13 +274,13 @@
       <a
         target="_blank"
         href="http://www.travelassist.com/mag/mag_home.html"
-        class="bg-red-500 hover:bg-red-600 hover:scale-105 text-white py-2 px-8 border text-2xl shadow mx-auto mt-20 cursor-pointer"
+        class="bg-red-500 hover:bg-red-600 hover:scale-105 text-white py-2 px-8 border text-2xl shadow mx-auto mt-10 cursor-pointer"
       >
         <h1>SEE FULL INDEX</h1>
       </a>
     </section>
 
-    <footer class="h-96 mt-16 text-center">
+    <footer class="h-96 mt-8 text-center">
       <hr class="my-10 border-gray-800" />
       <div id="logos" class="flex align-middle justify-center gap-5 py-4">
         <a href="https://github.com/pj-pj-pj/redesigned-travel-mag">
