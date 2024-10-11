@@ -26,6 +26,63 @@ h1 {
     serif;
 }
 
+body {
+  background-image: url("./public/bg.jpg");
+}
+
+@keyframes slideshow {
+  0% {
+    background-image: url(./public/title-imgs/title-img.jpg);
+  }
+  15% {
+    background-image: url(./public/title-imgs/a.jpg);
+  }
+  30% {
+    background-image: url(./public/title-imgs/b.jpg);
+  }
+  45% {
+    background-image: url(./public/title-imgs/c.jpg);
+  }
+  65% {
+    background-image: url(./public/title-imgs/d.jpg);
+  }
+  80% {
+    background-image: url(./public/title-imgs/e.jpg);
+  }
+  100% {
+    background-image: url(./public/title-imgs/f.jpg);
+  }
+}
+
+#title-img {
+  background-image: url(./public/title-imgs/title-img.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  animation: slideshow 17s infinite;
+}
+
+body {
+  animation: fadein 1s ease-in-out 0s;
+  max-width: 80rem;
+  margin: 0 auto;
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+    transform: rotate(0deg);
+  }
+  100% {
+    opacity: 1;
+    transform: rotate(360deg);
+  }
+}
+
+#txt-magazine-container h2 {
+  background-image: url(./public/bg.jpg);
+  background-size: cover;
+}
+
 h2,
 nav li,
 nav a {
@@ -62,10 +119,6 @@ html {
   height: 100%;
 }
 
-body {
-  max-width: 80rem;
-}
-
 .dot {
   height: 10px;
   width: 10px;
@@ -77,10 +130,6 @@ figure {
 
 figure {
   min-height: 28rem;
-}
-
-body {
-  margin: 0 auto;
 }
 
 @media (min-width: 1000px) {
