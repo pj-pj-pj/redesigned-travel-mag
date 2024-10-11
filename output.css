@@ -1040,6 +1040,12 @@ body {
 
 @keyframes slideshow {
   0% {
+    opacity: 0.3;
+    background-image: url(./public/title-imgs/title-img.jpg);
+  }
+
+  2% {
+    opacity: 1;
     background-image: url(./public/title-imgs/title-img.jpg);
   }
 
@@ -1052,14 +1058,14 @@ body {
   }
 
   45% {
-    background-image: url(./public/title-imgs/c.jpg);
+    background-image: url(./public/title-imgs/title-img.jpg);
   }
 
-  65% {
-    background-image: url(./public/title-imgs/d.jpg);
+  70% {
+    background-image: url(./public/title-imgs/a.jpg);
   }
 
-  80% {
+  85% {
     background-image: url(./public/title-imgs/e.jpg);
   }
 
@@ -1072,7 +1078,14 @@ body {
   background-image: url(./public/title-imgs/title-img.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  animation: slideshow 17s infinite;
+  animation: slideshow 15s infinite;
+}
+
+figure img {
+  z-index: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 body {
@@ -1083,20 +1096,24 @@ body {
 
 @keyframes fadein {
   0% {
-    opacity: 0;
+    opacity: 0.4;
     transform: scale(0);
   }
 
+  8% {
+    transform: scale(0.7);
+  }
+
   10% {
-    transform: scale(0.5);
+    transform: scale(0.9);
   }
 
-  70% {
-    transform: scale(1.1);
+  50% {
+    transform: scale(1.01);
   }
 
-  95% {
-    transform: scale(1.05);
+  80% {
+    transform: scale(0.98);
   }
 
   100% {
