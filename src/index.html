@@ -12,23 +12,23 @@
       <h1 class="line-clamp-1 text-red-500 font-semibold text-5xl sm:text-6xl text-center lg:text-7xl cursor-pointer z-50">TravelAssist</h1>
       <div id="txt-magazine-container" class="inline-flex items-center justify-center w-full">
         <hr class="w-full h-px my-5 lg:my-3 border-slate-950" />
-        <h2 class="absolute px-4 font-black -translate-x-1/2 left-1/2 text-slate-950 text-2xl md:text-3xl text-center">MAGAZINE</h2>
+        <h2 class="absolute px-4 font-black text-slate-950 text-2xl md:text-3xl text-center">MAGAZINE</h2>
       </div>
 
       <nav class="uppercase text-xl flex flex-col gap-3 z-50">
         <ul class="flex justify-between">
-          <li class="border border-slate-950 pr-3 bg-slate-950 text-orange-50 hover:text-slate-950 hover:bg-orange-100">
+          <li class="nav-item-left border border-slate-950 pr-3 bg-slate-950 text-orange-50 hover:text-slate-950 hover:bg-transparent">
             <span class="px-1 mr-2 bg-slate-950">&nbsp</span><a href="#title-page">Home</a>
           </li>
-          <li class="border border-slate-950 pl-3 py-0 hover:bg-slate-950 hover:text-orange-50">
+          <li class="nav-item-right border border-slate-950 pl-3 py-0 hover:bg-slate-950 hover:text-orange-50">
             <a href="#index">Index</a><span class="px-1 my-0 ml-2 bg-slate-900">&nbsp</span>
           </li>
         </ul>
         <ul class="flex justify-between">
-          <li class="border border-slate-950 pr-3 hover:bg-slate-950 hover:text-orange-50">
+          <li class="nav-item-left border border-slate-950 pr-3 hover:bg-slate-950 hover:text-orange-50">
             <span class="px-1 mr-2 bg-slate-900">&nbsp</span><a href="http://www.travelassist.com/contact_main.html" target="_blank">Contact</a>
           </li>
-          <li class="border border-slate-950 pl-3 hover:bg-slate-950 hover:text-orange-50">
+          <li class="nav-item-right border border-slate-950 pl-3 hover:bg-slate-950 hover:text-orange-50">
             <a href="#featured">Featured</a><span class="px-1 ml-2 bg-slate-900">&nbsp</span>
           </li>
         </ul>
@@ -63,8 +63,10 @@
         <input type="radio" name="slider" id="item-8" />
 
         <div class="arrows">
-          <span> &#x2039;</span>
-          <span> &#x203A;</span>
+          <span id="prev-arrow">&#x2039;</span>
+          <!-- Left Arrow -->
+          <span id="next-arrow">&#x203A;</span>
+          <!-- Right Arrow -->
         </div>
         <div id="cards" class="cards">
           <label class="card" for="item-1" id="article-1">
@@ -304,5 +306,35 @@
       </div>
       <h3 class="pb-16">© Copyright 1995-2012 ASSIST Information Services - All Rights Reserved</h3>
     </footer>
+    <script>
+      document.getElementById("prev-arrow").onclick = function () {
+        scaleArrow(this);
+        const radios = document.querySelectorAll('input[type="radio"]');
+        for (let i = 0; i < radios.length; i++) {
+          if (radios[i].checked) {
+            radios[(i - 1 + radios.length) % radios.length].checked = true;
+            break;
+          }
+        }
+      };
+
+      document.getElementById("next-arrow").onclick = function () {
+        scaleArrow(this);
+        const radios = document.querySelectorAll('input[type="radio"]');
+        for (let i = 0; i < radios.length; i++) {
+          if (radios[i].checked) {
+            radios[(i + 1) % radios.length].checked = true;
+            break;
+          }
+        }
+      };
+
+      function scaleArrow(arrow) {
+        arrow.classList.add("scaled");
+        setTimeout(() => {
+          arrow.classList.remove("scaled");
+        }, 200);
+      }
+    </script>
   </body>
 </html>

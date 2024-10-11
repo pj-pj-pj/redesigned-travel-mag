@@ -600,10 +600,6 @@ video {
   bottom: 0px;
 }
 
-.left-1\/2 {
-  left: 50%;
-}
-
 .z-50 {
   z-index: 50;
 }
@@ -722,11 +718,6 @@ video {
 
 .w-full {
   width: 100%;
-}
-
-.-translate-x-1\/2 {
-  --tw-translate-x: -50%;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .cursor-pointer {
@@ -1021,6 +1012,28 @@ h1 {
     serif;
 }
 
+.nav-item-left,
+.nav-item-right {
+  transition:
+    transform 0.3s ease,
+    margin 0.3s ease;
+}
+
+.nav-item-left:hover {
+  transform: translateX(7px);
+  margin: 0 5px;
+}
+
+.nav-item-right:hover {
+  transform: translateX(-7px);
+  margin: 0 5px;
+}
+
+.nav-item-left:active,
+.nav-item-right:active {
+  transform: scale(0.65);
+}
+
 body {
   background-image: url("./public/bg.jpg");
 }
@@ -1079,11 +1092,11 @@ body {
   }
 
   70% {
-    transform: scale(1.2);
+    transform: scale(1.1);
   }
 
   95% {
-    transform: scale(1.1);
+    transform: scale(1.05);
   }
 
   100% {
@@ -1199,7 +1212,35 @@ input[type="radio"] {
   display: flex;
   justify-content: center;
   gap: 50%;
-  font-size: 70px;
+  font-size: 80px;
+  z-index: 1;
+  opacity: 0.7;
+}
+
+.arrows:hover {
+  z-index: 1;
+  transform: translateY(-50%);
+  transition: transform 0.2s ease;
+}
+
+.arrows span {
+  z-index: 1;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.arrows span.scaled {
+  transform: scale(1);
+}
+
+.arrows span:hover {
+  z-index: 1;
+  transform: scale(1.2);
+  transition: transform 0.2s ease;
+}
+
+.arrows span:active {
+  transform: scale(0.85);
 }
 
 .cards {
@@ -1487,11 +1528,6 @@ input[type="radio"] {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
-.hover\:bg-orange-100:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 237 213 / var(--tw-bg-opacity));
-}
-
 .hover\:bg-red-600:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(220 38 38 / var(--tw-bg-opacity));
@@ -1500,6 +1536,10 @@ input[type="radio"] {
 .hover\:bg-slate-950:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(2 6 23 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-transparent:hover {
+  background-color: transparent;
 }
 
 .hover\:text-orange-50:hover {

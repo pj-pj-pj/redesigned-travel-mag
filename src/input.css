@@ -26,6 +26,28 @@ h1 {
     serif;
 }
 
+.nav-item-left,
+.nav-item-right {
+  transition:
+    transform 0.3s ease,
+    margin 0.3s ease;
+}
+
+.nav-item-left:hover {
+  transform: translateX(7px);
+  margin: 0 5px;
+}
+
+.nav-item-right:hover {
+  transform: translateX(-7px);
+  margin: 0 5px;
+}
+
+.nav-item-left:active,
+.nav-item-right:active {
+  transform: scale(0.65);
+}
+
 body {
   background-image: url("./public/bg.jpg");
 }
@@ -76,10 +98,10 @@ body {
     transform: scale(0.5);
   }
   70% {
-    transform: scale(1.2);
+    transform: scale(1.1);
   }
   95% {
-    transform: scale(1.1);
+    transform: scale(1.05);
   }
   100% {
     transform: scale(1);
@@ -203,7 +225,35 @@ input[type="radio"] {
   display: flex;
   justify-content: center;
   gap: 50%;
-  font-size: 70px;
+  font-size: 80px;
+  z-index: 1;
+  opacity: 0.7;
+}
+
+.arrows:hover {
+  z-index: 1;
+  transform: translateY(-50%);
+  transition: transform 0.2s ease;
+}
+
+.arrows span {
+  z-index: 1;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.arrows span.scaled {
+  transform: scale(1);
+}
+
+.arrows span:hover {
+  z-index: 1;
+  transform: scale(1.2);
+  transition: transform 0.2s ease;
+}
+
+.arrows span:active {
+  transform: scale(0.85);
 }
 
 .cards {
